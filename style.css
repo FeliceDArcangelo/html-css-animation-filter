@@ -1,0 +1,253 @@
+.ex-1-square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+.ex-1-square:hover{
+    background-color: red;
+    transition: all 3s;
+}
+
+.ex-2-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.ex-2-square:active{
+    transition: all 3s;
+    width: 100%;
+}
+
+.ex-3-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.ex-3-square:hover{
+    border-radius: 100%;
+    transition: all 4s;
+}
+
+.ex-4-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.ex-4-square:hover{
+    transition: all 4s;
+    opacity: 0;
+}
+
+.ex-5-square {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    background: red;
+}
+
+.ex-5-square:hover{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    transition: all 3s;
+}
+
+.ex-5-square:active{
+    width: 40px;
+    height: 40px;
+    margin: 25px;
+}
+
+.ex-6-img, .ex-7-img, .ex-8-img {
+    width: 500px;
+}
+
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+
+.ex-7-img:hover{
+    filter:grayscale(1);
+    opacity: 60%;
+    transition: all 3s;
+}
+
+.ex-8-img:hover{
+    filter:brightness(1.5);
+    opacity: 70%;
+    border-radius: 2em;
+    transition: all 3s;
+}
+
+.ex-9-img {
+    margin: 50px 100px;
+    width: 400px;
+}
+
+.ex-9-img:hover{
+    filter:invert(1.5);
+    opacity: 70%;
+    border-radius: 2em;
+    transition: all 3s;
+    transform: scale(1.5);
+}
+
+.ex-10-icon {
+    font-size: 60px;
+    animation-name: ruota;
+    animation-iteration-count:infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes ruota{
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+.ex-11-icon {
+    font-size: 60px;
+}
+
+.ex-11-icon:hover{
+    animation-name: ruota2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes ruota2{
+    80%{
+        transform: rotate(270deg)
+    }
+}
+
+.ex-12-button, .ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+.ex-12-top-white, .ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+.ex-12-top-white{
+    animation-name: bianco-top-1;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+
+@keyframes bianco-top-1{
+    50%{
+        top: -10px;
+        left: calc(100% - 60px);
+    }
+
+}
+
+.ex-12-bottom-white{
+    animation-name: bianco-bottom-1;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+
+@keyframes bianco-bottom-1{
+    50%{
+        bottom: -10px;
+        right: calc(100% - 60px);
+    }
+
+}
+
+.ex-13-top-white{
+    animation-name: bianco-top-2;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bianco-top-2{
+    25%{
+        top: -10px;
+        left: 100%;
+    }
+
+    50%{
+        top: 100%;
+        left: 100%;
+    }
+
+    75%{
+        top: 100%;
+        left: -10%;
+    }
+
+    90%{
+        top: -10px;
+        left: -10%;
+    }
+
+    100%{
+        top: -10px;
+        left: 10%; 
+    }
+
+}
+
+.ex-13-bottom-white{
+    animation-name: bianco-bottom-2;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bianco-bottom-2{
+    25%{
+        bottom: -10px;
+        right: 80%;
+    }
+
+    50%{
+        bottom: 100%;
+        right: 80%;
+    }
+
+    75%{
+        bottom: 100%;
+        right: -10%;
+    }
+
+    90%{
+        bottom: -10px;
+        right: -10%;
+    }
+
+    100%{
+        bottom: -10px;
+        right: 10%; 
+    }
+}
